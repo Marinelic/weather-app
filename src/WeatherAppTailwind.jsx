@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-
 const API_KEY = 'ad0301d126375c990c685de4d875c8c4';
 
 function WeatherAppTailwind() {
@@ -42,7 +41,6 @@ function WeatherAppTailwind() {
       }
 
       setHasSearched(true);
-
     };
 
      const resetApp = () => {
@@ -58,7 +56,7 @@ function WeatherAppTailwind() {
 
       useEffect(() => {
         inputRef.current?.focus();
-      }, [weather, error]); // refocus after results or error
+      }, [weather, error]);
 
 
     const icon = weather?.weather?.[0]?.icon
@@ -201,7 +199,6 @@ function WeatherAppTailwind() {
       </AnimatePresence>
     </div>
   );
-
 }
 
 export default WeatherAppTailwind;
