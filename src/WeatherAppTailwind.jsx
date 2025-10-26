@@ -77,12 +77,11 @@ function WeatherAppTailwind() {
       };
 
   return (
-  <div
-  className={`min-h-screen bg-linear-to-br ${getBackgroundClass()} text-amber-100 flex flex-col items-center ${
-    hasSearched ? 'justify-start pt-32 sm:pt-40' : 'justify-center'
-  } px-4 sm:px-6 transition-all duration-700 font-sans rounded-full`}
->
-  
+      <div
+      className={`min-h-screen bg-gradient-to-br ${getBackgroundClass()} text-amber-100 flex flex-col items-center justify-center px-4 sm:px-6 transition-all duration-700 font-sans rounded-3xl`}
+    >
+
+
     {/* TITLE + SEARCH CONTAINER */}
       <motion.div
         layout
@@ -97,7 +96,7 @@ function WeatherAppTailwind() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-3xl sm:text-5xl font-extrabold text-center drop-shadow-lg tracking-wide text-white"
+          className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center drop-shadow-lg tracking-wide text-amber-700"
         >
           Weather App
         </motion.h1>
